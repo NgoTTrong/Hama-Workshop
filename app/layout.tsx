@@ -2,7 +2,6 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Be_Vietnam_Pro, Space_Mono } from 'next/font/google'
 import type React from 'react'
-import heroImage from '../public/hero-image.png'
 import './globals.css'
 
 const beVietnamPro = Be_Vietnam_Pro({
@@ -59,7 +58,7 @@ export const metadata: Metadata = {
       'Gỗ thủ công kết hợp in 3D hiện đại. Mỗi sản phẩm được thiết kế riêng cho đúng người sử dụng.',
     images: [
       {
-        url: heroImage.src,
+        url: '/hero-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Gỗ thủ công và in 3D cá nhân hóa'
@@ -72,7 +71,7 @@ export const metadata: Metadata = {
     title: 'Cá Nhân Hóa Theo Yêu Cầu | Gỗ Thủ Công × In 3D',
     description:
       'Sản phẩm gỗ thủ công và in 3D cá nhân hóa. Không rập khuôn, không đại trà.',
-    images: [heroImage.src]
+    images: ['/hero-image.jpg']
   },
 
   icons: {
