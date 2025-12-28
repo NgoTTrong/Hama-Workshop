@@ -10,7 +10,7 @@ INSERT INTO admins (email, password_hash, full_name, role, is_active)
 VALUES (
   'admin@ghecrochet.com',
   'admin123', -- This is temporary - will be replaced with bcrypt hash
-  'Admin Ghẹ Crochet',
+  'Admin Hama Workshop',
   'admin',
   true
 );

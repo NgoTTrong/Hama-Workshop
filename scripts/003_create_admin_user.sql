@@ -76,7 +76,7 @@ INSERT INTO auth.users (
   NOW(),
   NOW(),
   '{"provider": "email", "providers": ["email"]}',
-  '{"full_name": "Admin Ghẹ Crochet"}',
+  '{"full_name": "Admin Hama Workshop"}',
   false,
   '',
   '',

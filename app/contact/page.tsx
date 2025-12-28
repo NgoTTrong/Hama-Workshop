@@ -3,15 +3,8 @@ import { Header } from '@/components/header'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import {
-  Clock,
-  Facebook,
-  Heart,
-  Mail,
-  MapPin,
-  MessageCircle,
-  Phone
-} from 'lucide-react'
+import { Clock, Heart, Mail, MapPin, Phone } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function ContactPage() {
@@ -49,6 +42,95 @@ export default function ContactPage() {
               </div>
 
               <div className='grid md:grid-cols-2 gap-6'>
+                {/* Quick Contact Actions */}
+                <Card className='border-0 cute-shadow bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5'>
+                  <CardContent className='p-6'>
+                    <div className='space-y-4'>
+                      <h3 className='font-semibold'>Liên hệ nhanh</h3>
+                      <p className='text-sm text-muted-foreground'>
+                        Bạn đã có ý tưởng cụ thể? Liên hệ ngay để được tư vấn và
+                        báo giá!
+                      </p>
+                      <div className='grid grid-cols-2 gap-3'>
+                        <Button
+                          size='sm'
+                          className='bg-primary hover:bg-primary/90 text-primary-foreground rounded-full'
+                          asChild
+                        >
+                          <Link href='tel:0325311497'>
+                            <Phone className='w-4 h-4 mr-2' />
+                            Gọi ngay
+                          </Link>
+                        </Button>
+                        <Button
+                          variant='outline'
+                          size='sm'
+                          className='rounded-full bg-transparent'
+                          asChild
+                        >
+                          <Link
+                            href='https://www.facebook.com/profile.php?id=61550244332051'
+                            target='_blank'
+                          >
+                            <Image
+                              src='/facebook.png'
+                              alt='Facebook'
+                              width={16}
+                              height={16}
+                              className='w-4 h-4 mr-2'
+                            />
+                            Facebook
+                          </Link>
+                        </Button>
+                        <Button
+                          variant='outline'
+                          size='sm'
+                          className='rounded-full bg-blue-50 border-blue-200 text-blue-600 hover:bg-blue-100'
+                          asChild
+                        >
+                          <Link href='tel:0325311497'>
+                            <Image
+                              src='/zalo.png'
+                              alt='Zalo'
+                              width={16}
+                              height={16}
+                              className='w-4 h-4 mr-2'
+                            />
+                            Zalo
+                          </Link>
+                        </Button>
+                        <Button
+                          variant='outline'
+                          size='sm'
+                          className='rounded-full bg-blue-50 border-blue-200 text-blue-600 hover:bg-blue-100'
+                          asChild
+                        >
+                          <Link
+                            target='_blank'
+                            href='https://www.tiktok.com/@hmworkshop_official'
+                          >
+                            <Image
+                              src='/tiktok.png'
+                              alt='TikTok'
+                              width={16}
+                              height={16}
+                              className='w-4 h-4 mr-2'
+                            />
+                            TikTok
+                          </Link>
+                        </Button>
+                      </div>
+
+                      <div className='text-center'>
+                        <p className='text-sm text-muted-foreground'>
+                          🪵 Xem quy trình gia công đồ gỗ | 🖨️ Mẫu in 3D mới
+                          nhất | 💬 Tư vấn & báo giá trực tiếp
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
                 {/* Contact Details */}
                 <Card className='border-0 cute-shadow'>
                   <CardContent className='p-6 space-y-6'>
@@ -96,83 +178,6 @@ export default function ContactPage() {
                           <p>Thứ 2 - Thứ 6: 9:00 - 18:00</p>
                           <p>Thứ 7 - Chủ nhật: 9:00 - 17:00</p>
                         </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Quick Contact Actions */}
-                <Card className='border-0 cute-shadow bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5'>
-                  <CardContent className='p-6'>
-                    <div className='space-y-4'>
-                      <h3 className='font-semibold'>Liên hệ nhanh</h3>
-                      <p className='text-sm text-muted-foreground'>
-                        Bạn đã có ý tưởng cụ thể? Liên hệ ngay để được tư vấn và
-                        báo giá!
-                      </p>
-                      <div className='grid grid-cols-2 gap-3'>
-                        <Button
-                          size='sm'
-                          className='bg-primary hover:bg-primary/90 text-primary-foreground rounded-full'
-                          asChild
-                        >
-                          <Link href='tel:0325311497'>
-                            <Phone className='w-4 h-4 mr-2' />
-                            Gọi ngay
-                          </Link>
-                        </Button>
-                        <Button
-                          variant='outline'
-                          size='sm'
-                          className='rounded-full bg-transparent'
-                          asChild
-                        >
-                          <Link
-                            href='https://www.facebook.com/profile.php?id=61550244332051'
-                            target='_blank'
-                          >
-                            <Facebook className='w-4 h-4 mr-2' />
-                            Facebook
-                          </Link>
-                        </Button>
-                        <Button
-                          variant='outline'
-                          size='sm'
-                          className='rounded-full bg-blue-50 border-blue-200 text-blue-600 hover:bg-blue-100'
-                          asChild
-                        >
-                          <Link href='tel:0325311497'>
-                            <MessageCircle className='w-4 h-4 mr-2' />
-                            Zalo
-                          </Link>
-                        </Button>
-                        <Button
-                          variant='outline'
-                          size='sm'
-                          className='rounded-full bg-blue-50 border-blue-200 text-blue-600 hover:bg-blue-100'
-                          asChild
-                        >
-                          <Link
-                            target='_blank'
-                            href='https://www.tiktok.com/@hmworkshop_official'
-                          >
-                            <svg
-                              className='w-4 h-4'
-                              viewBox='0 0 24 24'
-                              fill='currentColor'
-                            >
-                              <path d='M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24 5.367 18.641.001.012.001z' />
-                            </svg>
-                            TikTok
-                          </Link>
-                        </Button>
-                      </div>
-
-                      <div className='text-center'>
-                        <p className='text-sm text-muted-foreground'>
-                          🪵 Xem quy trình gia công đồ gỗ | 🖨️ Mẫu in 3D mới
-                          nhất | 💬 Tư vấn & báo giá trực tiếp
-                        </p>
                       </div>
                     </div>
                   </CardContent>

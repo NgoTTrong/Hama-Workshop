@@ -101,9 +101,10 @@ export function Footer() {
                 <Link
                   href='https://www.facebook.com/profile.php?id=61550244332051'
                   target='_blank'
-                  className='text-muted-foreground hover:text-primary transition-colors'
+                  className='text-muted-foreground hover:text-primary transition-colors flex items-start gap-2 group'
                 >
                   <Facebook className='w-5 h-5' />
+                  <span>Hmworkshop Wooden Gift and Decor Ornament</span>
                 </Link>
               </div>
             </div>

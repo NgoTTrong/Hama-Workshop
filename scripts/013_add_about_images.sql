@@ -12,6 +12,6 @@ CREATE TABLE IF NOT EXISTS about_images (
 
 -- Insert some sample data
 INSERT INTO about_images (title, description, image_url, display_order) VALUES
-('Không gian làm việc', 'Góc làm việc ấm cúng của Ghẹ Crochet', '/placeholder.svg?height=400&width=600&text=Workspace', 1),
+('Không gian làm việc', 'Góc làm việc ấm cúng của Hama Workshop', '/placeholder.svg?height=400&width=600&text=Workspace', 1),
 ('Quy trình móc len', 'Những bước tỉ mỉ trong quy trình tạo sản phẩm', '/placeholder.svg?height=400&width=600&text=Process', 2),
 ('Sản phẩm hoàn thiện', 'Những tác phẩm đáng yêu đã hoàn thành', '/placeholder.svg?height=400&width=600&text=Products', 3);

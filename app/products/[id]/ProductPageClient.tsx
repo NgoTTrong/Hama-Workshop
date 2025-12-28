@@ -105,12 +105,12 @@ export default function ProductPageClient({ params }: ProductPageProps) {
         : 'https://schema.org/OutOfStock',
       seller: {
         '@type': 'Organization',
-        name: 'Ghẹ Crochet'
+        name: 'Hama Workshop'
       }
     },
     brand: {
       '@type': 'Brand',
-      name: 'Ghẹ Crochet'
+      name: 'Hama Workshop'
     },
     category: product.category,
     material: product.materials,

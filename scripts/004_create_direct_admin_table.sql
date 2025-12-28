@@ -23,7 +23,7 @@ INSERT INTO admins (email, password_hash, full_name)
 VALUES (
   'admin@ghecrochet.com',
   '$2b$10$rOzJqQqQqQqQqQqQqQqQqOzJqQqQqQqQqQqQqQqQqOzJqQqQqQqQqQ', -- This is a placeholder, we'll use bcrypt in the app
-  'Admin Ghẹ Crochet'
+  'Admin Hama Workshop'
 ) ON CONFLICT (email) DO NOTHING;
 
 -- Create sessions table for managing login sessions

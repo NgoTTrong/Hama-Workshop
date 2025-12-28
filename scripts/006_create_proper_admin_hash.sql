@@ -10,7 +10,7 @@ INSERT INTO admins (email, password_hash, full_name, role)
 VALUES (
   'admin@ghecrochet.com',
   '$2b$10$rOzJqQqQqQqQqQqQqQqQqOzJqQqQqQqQqQqQqQqQqOzJqQqQqQqQqQ',
-  'Admin Ghẹ Crochet',
+  'Admin Hama Workshop',
   'admin'
 ) ON CONFLICT (email) DO UPDATE SET
   password_hash = EXCLUDED.password_hash,

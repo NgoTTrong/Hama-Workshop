@@ -48,17 +48,17 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: 'Sản phẩm không tìm thấy - Ghẹ Crochet',
+      title: 'Sản phẩm không tìm thấy - Hama Workshop',
       description: 'Sản phẩm bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.'
     }
   }
 
-  const title = `${product.name} - Ghẹ Crochet`
+  const title = `${product.name} - Hama Workshop`
   const description =
     product.description ||
     `Mua ${
       product.name
-    } handmade chất lượng cao tại Ghẹ Crochet. Giá ${new Intl.NumberFormat(
+    } handmade chất lượng cao tại Hama Workshop. Giá ${new Intl.NumberFormat(
       'vi-VN',
       { style: 'currency', currency: 'VND' }
     ).format(product.price)}`
@@ -80,7 +80,7 @@ export async function generateMetadata({
         }
       ],
       type: 'website',
-      siteName: 'Ghẹ Crochet'
+      siteName: 'Hama Workshop'
     },
     twitter: {
       card: 'summary_large_image',

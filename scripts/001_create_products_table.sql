@@ -1,4 +1,4 @@
--- Create products table for Ghẹ Crochet showcase
+-- Create products table for Hama Workshop showcase
 CREATE TABLE IF NOT EXISTS products (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   name TEXT NOT NULL,
