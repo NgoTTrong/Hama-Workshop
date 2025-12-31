@@ -132,17 +132,6 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* Quote Section */}
-        <section className='py-16 bg-muted/30'>
-          <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-            <blockquote className='max-w-3xl mx-auto text-center space-y-4'>
-              <p className='text-2xl lg:text-3xl font-medium text-foreground italic leading-relaxed text-balance'>
-                "Sản phẩm tốt nhất là sản phẩm được tạo ra cho đúng người."
-              </p>
-            </blockquote>
-          </div>
-        </section>
-
         {/* Categories Section */}
         <section className='relative py-16 lg:py-24'>
           <div className='container mx-auto px-4 sm:px-6 lg:px-8 relative'>

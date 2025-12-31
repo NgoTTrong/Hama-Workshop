@@ -115,12 +115,6 @@ export default async function AboutPage() {
                     </div>
                   </div>
                 </div>
-                <p className='text-xl font-medium text-foreground text-center py-4'>
-                  Bởi vì chúng tôi tin rằng:
-                </p>
-                <blockquote className='text-2xl lg:text-3xl font-bold text-primary text-center italic py-8'>
-                  "Sản phẩm tốt nhất là sản phẩm được tạo ra cho đúng người."
-                </blockquote>
               </div>
             </div>
 
