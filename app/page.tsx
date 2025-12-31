@@ -5,18 +5,8 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { createClient } from '@/lib/supabase/server'
 import {
-  Bot,
   Box,
-  Cpu,
-  Gift,
-  Lightbulb,
-  Package,
-  Printer,
-  Puzzle,
-  Sofa,
-  Sparkles,
-  Trees,
-  Wrench
+  Sparkles
 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -128,75 +118,6 @@ export default async function HomePage() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Categories Section */}
-        <section className='relative py-16 lg:py-24'>
-          <div className='container mx-auto px-4 sm:px-6 lg:px-8 relative'>
-            <div className='space-y-3 mb-12'>
-              <h2 className='text-3xl lg:text-4xl font-bold text-foreground'>
-                Danh mục sản phẩm
-              </h2>
-              <p className='text-lg text-muted-foreground max-w-2xl text-pretty'>
-                Sự kết hợp hoàn hảo giữa vân gỗ tự nhiên và độ chính xác của
-                công nghệ in 3D.
-              </p>
-            </div>
-
-            <div className='grid grid-cols-2 lg:grid-cols-4 gap-6'>
-              {categories?.map((category) => {
-                const iconRules = [
-                  { keywords: ['gỗ'], icon: Trees },
-                  { keywords: ['3d', 'in 3d'], icon: Printer },
-                  { keywords: ['mô hình'], icon: Box },
-                  { keywords: ['đèn', 'den'], icon: Lightbulb },
-                  { keywords: ['trang trí', 'decor'], icon: Sparkles },
-                  { keywords: ['quà', 'gift'], icon: Gift },
-                  { keywords: ['cơ khí', 'kim loại'], icon: Wrench },
-                  { keywords: ['điện tử', 'dien tu'], icon: Cpu },
-                  { keywords: ['robot'], icon: Bot },
-                  { keywords: ['nội thất'], icon: Sofa },
-                  { keywords: ['mini'], icon: Package },
-                  { keywords: ['đồ chơi', 'toy'], icon: Puzzle }
-                ]
-
-                const lowerName = category.name.toLowerCase()
-                let Icon = Box
-
-                for (const rule of iconRules) {
-                  if (rule.keywords.some((k) => lowerName.includes(k))) {
-                    Icon = rule.icon
-                    break
-                  }
-                }
-
-                return (
-                  <Link
-                    key={category.id}
-                    href={`/products?category=${category.name.toLowerCase()}`}
-                  >
-                    <Card className='group border border-border hover:border-primary/50 transition-all duration-500 hover:-translate-y-1 tech-shadow overflow-hidden bg-white/50 backdrop-blur-sm'>
-                      <CardContent className='p-8 text-center space-y-4'>
-                        <div className='w-16 h-16 mx-auto rounded-lg bg-muted flex items-center justify-center group-hover:bg-primary/10 transition-all duration-500 shadow-sm border border-transparent group-hover:border-primary/20'>
-                          <Icon className='w-8 h-8 text-primary/80 rotate-3d-hover' />
-                        </div>
-                        <div>
-                          <h3 className='font-bold text-foreground group-hover:text-primary transition-colors tracking-tight'>
-                            {category.name}
-                          </h3>
-                          {category.description && (
-                            <p className='text-xs text-muted-foreground mt-2 line-clamp-2 leading-relaxed'>
-                              {category.description}
-                            </p>
-                          )}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                )
-              })}
             </div>
           </div>
         </section>
